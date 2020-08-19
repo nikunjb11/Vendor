@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/groupListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <TextView
+            android:id="@+id/group_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Sr"
+            android:visibility="gone"
+            android:textSize="15sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Group Name"
+            android:visibility="gone"
+            android:textSize="15sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/group_address"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Address"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/group_preference"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Preferences "
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/group_action"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Action "
+            android:visibility="gone"
+            android:textSize="15sp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

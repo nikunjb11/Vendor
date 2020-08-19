@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:checkableBehavior="single"
+        android:title="TODO">
+
+        <item
+            android:id="@+id/nav_custList"
+            android:icon="@drawable/user"
+            android:title="Customer List"/>
+
+        <item
+            android:id="@+id/nav_packList"
+            android:icon="@drawable/bullet"
+            android:title="Package List"/>
+
+        <item
+            android:id="@+id/nav_subscriptionList"
+            android:icon="@drawable/list"
+            android:title="User subscription list"/>
+
+        <item
+            android:id="@+id/nav_addCategory"
+            android:icon="@drawable/add_list"
+            android:title="Add Category"/>
+
+        <item
+            android:id="@+id/nav_createItem"
+            android:icon="@drawable/edit"
+            android:title="Create Item"/>
+
+        <item
+            android:id="@+id/nav_addPackage"
+            android:icon="@android:drawable/btn_plus"
+            android:title="Add Package"
+            android:visible="false"/>
+
+
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/location"
+            android:title="Address"/>
+
+        <item
+            android:id="@+id/nav_approval"
+            android:title="Approval">
+
+             <menu>
+
+                 <item
+                     android:id="@+id/subnav_CODRequest"
+                     android:icon="@drawable/list"
+                     android:title="COD Request"/>
+
+                 <item
+                     android:id="@+id/subnav_CODApprove"
+                     android:icon="@drawable/list"
+                     android:title="COD Approve"/>
+
+                 <item
+                     android:id="@+id/subnav_onlineRequest"
+                     android:icon="@drawable/list"
+                     android:title="Online Request"/>
+
+                 <item
+                     android:id="@+id/subnav_onlineApprove"
+                     android:icon="@drawable/list"
+                     android:title="Online Approve"/>
+
+             </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/logout"
+            android:visible="true"
+            android:title="Login"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:visible="false"
+            android:title="Log Out"/>
+
+    </item>
+
+</menu>

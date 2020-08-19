@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:background="@drawable/tile_background"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:src="@drawable/logo"
+                    android:padding="15sp"
+                    android:id="@+id/itemImage"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/pack_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Package Name"
+                        android:layout_weight="1"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/coupon_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="Coupon Count"
+                        android:layout_weight="1"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/prize"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Prize"
+                        android:padding="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:visibility="gone">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            android:textColor="@color/colorWhite"
+                            android:background="@color/colorAccent"
+                            >
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:id="@+id/layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/pack_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Package Id: "
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/pack_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Package name; "
+                android:textSize="18sp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/pack_coupon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Coupon: "
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/pack_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Price: "
+                android:textSize="18sp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/pack_mealType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Meal Type "
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/d_OrderId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order Id "
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/renew"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Renew"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/d_onlineP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Online Pay"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+</LinearLayout>

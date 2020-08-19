@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Merizeb</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="signup">Not a Member? <u><font color="#fff"> Signup</font></u></string>
+
+    <string name="forgetPass"><u><font color="#fff">Forgot Password?</font></u></string>
+
+    <string name="chose_category">Choose Category</string>
+
+    <string name="server_name">http://driverzone.in/vendor/api/vendor/</string>
+</resources>
