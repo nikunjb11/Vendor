@@ -138,7 +138,7 @@ public class LoginActivity extends AppCompatActivity {
             queue.add(stringRequest);
     }
 
-         private void openApp(){
+    private void openApp(){
 
          session.setLoggedIn(true);
          session.setPrefix(prefixString);
