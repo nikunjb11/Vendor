@@ -9,5 +9,6 @@
 
     <string name="chose_category">Choose Category</string>
 
-    <string name="server_name">http://driverzone.in/vendor/api/vendor/</string>
+    <string name="server_name">http://merizeb.com/api/merizeb_api/</string>
+<!--    <string name="server_name">http://driverzone.in/vendor/api/vendor/</string>-->
 </resources>

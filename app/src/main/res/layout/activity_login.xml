@@ -26,7 +26,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:weightSum="7"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -46,8 +45,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:gravity="center"
                         android:layout_marginBottom="10dp">
@@ -65,35 +63,21 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <LinearLayout
+
+                        <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
+                            android:hint="Enter User ID"
+                            android:textSize="15dp"
                             android:layout_marginLeft="30dp"
                             android:layout_marginRight="30dp"
-                            android:layout_marginBottom="10dp">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="+91"
-                                android:textColor="#000"
-                                android:textSize="15dp"
-                                android:id="@+id/countryCode"/>
-
-                            <EditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Enter your Mobile Number"
-                                android:textSize="15dp"
-                                android:id="@+id/log_mobileNumber"/>
-
-                        </LinearLayout>
-
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/log_mobileNumber"
+                            android:drawableLeft="@drawable/ic_action_user"/>
 
                         <EditText
                             android:layout_width="match_parent"
@@ -103,7 +87,8 @@
                             android:textSize="15dp"
                             android:layout_marginLeft="30dp"
                             android:layout_marginRight="30dp"
-                            android:id="@+id/log_password"/>
+                            android:id="@+id/log_password"
+                            android:drawableLeft="@drawable/ic_action_password"/>
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -143,8 +128,7 @@
 
                     <Button
                         android:layout_width="220dp"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.9"
+                        android:layout_height="40dp"
                         android:layout_gravity="center_horizontal"
                         android:background="@color/colorAccent"
                         android:text="Sign in"
@@ -154,11 +138,11 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
                         android:orientation="horizontal"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -177,12 +161,6 @@
                             android:id="@+id/log_new_account"/>
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="0.2">
-
-                    </LinearLayout>
 
 
                 </LinearLayout>

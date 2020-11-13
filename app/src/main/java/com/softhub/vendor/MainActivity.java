@@ -104,9 +104,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             logout.setVisible(true);
             login.setVisible(false);
+            userName.setText(session.prefs.getString("username",null));
         }
 
-        userName.setText(session.prefs.getString("username",null));
 
 //        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 //        recyclerView.setHasFixedSize(true);

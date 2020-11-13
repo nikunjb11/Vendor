@@ -48,6 +48,7 @@ public class SignUp extends AppCompatActivity {
     private ProgressDialog progressDialog;
     private Session session;
     private String clientCode="";
+    private String userName="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -175,12 +176,12 @@ public class SignUp extends AppCompatActivity {
                             String result = JO.getString("data_code");
 
                             if(result.equals("200")){
-
                                 reg_llOtp.setVisibility(View.VISIBLE);
                                 reg_otp.setVisibility(View.VISIBLE);
                                 reg_register.setVisibility(View.GONE);
                                 clientCode = JO.getString("client_code");
                                 progressDialog.dismiss();
+                                reg_otp.setText(JO.getString("Otp"));
                                 Toast.makeText(getApplicationContext(),JO.getString("Message"),Toast.LENGTH_LONG).show();
                             }else {
                                 progressDialog.dismiss();
@@ -243,6 +244,7 @@ public class SignUp extends AppCompatActivity {
                             if(result.equals("200")){
 
                                 progressDialog.dismiss();
+                                userName = JO.getString("username");
                                 Toast.makeText(getApplicationContext(),JO.getString("res"),Toast.LENGTH_LONG).show();
                                 openApp();
                             }else {
@@ -287,7 +289,7 @@ public class SignUp extends AppCompatActivity {
 
         session.setLoggedIn(true);
         session.setPrefix(clientCode);
-        session.setUserName(clientCode);
+        session.setUserName(userName);
 
         Intent i = new Intent(getApplicationContext(),MainActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

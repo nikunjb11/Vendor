@@ -48,8 +48,7 @@
             android:text=""
             android:id="@+id/userMobileNumber"
             android:textColor="@color/colorAccent"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            />
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
       </LinearLayout>
 
         <ImageView
@@ -60,9 +59,7 @@
             android:contentDescription="Navigation Header"
             android:padding="3dp"
             android:scaleType="fitCenter"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_action_edit"
-            />
+            android:layout_gravity="center" />
     </LinearLayout>
 
 </LinearLayout>

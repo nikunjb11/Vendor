@@ -81,7 +81,6 @@ public class MasterPackage extends AppCompatActivity {
             }
         });
 
-        fetchPackages();
     }
 
     private void fetchPackages(){
